@@ -1,0 +1,33 @@
+<p>list-users works!</p>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">Name</th>
+      <th scope="col">Email</th>
+      <th scope="col">Contact</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of collection">
+      <th scope="row">{{ item.Uid }}</th>
+      <td>{{ item.firstname }}</td>
+      <td>{{ item.Email }}</td>
+      <td>{{ item.Contact }}</td>
+      <td>
+        <button
+          type="button"
+          (click)="deleteUser(item.Uid)"
+          class="btn btn-danger btn-sm"
+        >
+          Delete
+        </button>
+        {{ " " }}
+        <a routerLink="/update/{{ item.Uid }}">
+          <button type="button" class="btn btn-warning btn-sm">Update</button>
+        </a>
+      </td>
+    </tr>
+  </tbody>
+</table>
