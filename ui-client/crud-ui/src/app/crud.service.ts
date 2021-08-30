@@ -27,7 +27,7 @@ export class CrudService {
 
   //USER SERVICES
   getUserList(id: any) {
-    return this.http.get(`${this.url}/customers/${id}/users`);
+    return this.http.get(`${this.url}/customers/${id}/usermodels`);
   }
   addUser(jsonData: any) {
     return this.http.post(this.url + '/users', jsonData);
@@ -58,6 +58,6 @@ export class CrudService {
     return this.http.put(`${this.url}/customers/${id}`, jsonData);
   }
   deleteCustomer(id: any) {
-    return this.http.delete(`${this.url}/customers/${id}/users`);
+    return this.http.delete(`${this.url}/customers/${id}/usermodels`);
   }
 }

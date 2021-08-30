@@ -9,6 +9,7 @@ import { UpdateCustomerComponent } from './customers/update-customer/update-cust
 import { RegisterComponent } from './users/register/register.component';
 import { LoginComponent } from './users/login/login.component';
 import { AuthGuard } from './auth.guard';
+import { HomeComponent } from './landingPage/home/home.component';
 
 const routes: Routes = [
   {
@@ -38,11 +39,15 @@ const routes: Routes = [
   },
   {
     component: RegisterComponent,
-    path: ''
+    path: 'register'
   },
   {
     component: LoginComponent,
     path: 'login'
+  },
+  {
+    component: HomeComponent,
+    path: ''
   }
 ];
 

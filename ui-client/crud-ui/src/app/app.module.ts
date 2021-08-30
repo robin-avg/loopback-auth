@@ -14,6 +14,7 @@ import { UpdateCustomerComponent } from './customers/update-customer/update-cust
 import { RegisterComponent } from './users/register/register.component';
 import { LoginComponent } from './users/login/login.component';
 import { AuthGuard } from './auth.guard';
+import { HomeComponent } from './landingPage/home/home.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { AuthGuard } from './auth.guard';
     ListCustomerComponent,
     UpdateCustomerComponent,
     RegisterComponent,
-    LoginComponent
+    LoginComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
